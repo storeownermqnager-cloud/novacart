@@ -1,7 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const button = document.querySelector("button");
+// NovaCart V3
 
-    button.addEventListener("click", () => {
-        alert("🚀 Welcome to NovaCart! Products are coming soon!");
-    });
+console.log("NovaCart Loaded 🚀");
+
+window.addEventListener("scroll",()=>{
+
+const header=document.querySelector("header");
+
+if(window.scrollY>50){
+
+header.style.background="rgba(0,0,0,.75)";
+
+}else{
+
+header.style.background="rgba(0,0,0,.45)";
+
+}
+
 });
